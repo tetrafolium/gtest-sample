@@ -28,11 +28,9 @@ TEST_F(QueueTest, DequeueWorks) {
   ASSERT_NE(n, nullptr);
   EXPECT_EQ(*n, 1);
   EXPECT_EQ(q1_.size(), 0);
-  delete n;
 
   n = q2_.Dequeue();
   ASSERT_NE(n, nullptr);
   EXPECT_EQ(*n, 2);
   EXPECT_EQ(q2_.size(), 1);
-  delete n;
 }
