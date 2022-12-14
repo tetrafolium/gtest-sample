@@ -7,6 +7,7 @@ double summation(double plus, double multiply, int num) {
     long double x = 1.0;
     for (int i=0; i<num; i++){
         x = x * multiply + plus;
+        printf("x: %Lf ", x);
         result += x;
     }
     return result;
