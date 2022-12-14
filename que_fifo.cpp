@@ -22,8 +22,8 @@ template <typename E>
 E* Queue<E>::Dequeue(){
   E* element = NULL;
   if (queList.size()>0) {
-    element = &queList.back();
-    queList.pop_back();
+    element = &queList.front();
+    queList.pop_front();
   }
   return element;
 }
