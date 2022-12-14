@@ -15,6 +15,8 @@ TEST(summation_test, answer_05_multiply_100){
 
 TEST(summation_test, answer_08_multiply_1000){
     EXPECT_NE(4.0, summation(0, 0.8, 1000));
+    EXPECT_TRUE (4.0 < summation(0, 0.8, 1000));
+    EXPECT_TRUE (4.01 > summation(0, 0.8, 1000));
 }
 
 TEST(summation_test, basic) {
@@ -24,4 +26,6 @@ TEST(summation_test, basic) {
 
 TEST(summation2_test, basic) {
     EXPECT_NE(3.14159, 4 * summation2(2.0, -1, 2000));
+    EXPECT_TRUE(3.1410 < 4 * summation2(2.0, -1, 2000));
+    EXPECT_TRUE(3.1416 > 4 * summation2(2.0, -1, 2000));
 }
