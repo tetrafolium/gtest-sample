@@ -31,6 +31,6 @@ TEST_F(StackTest, DeStackWorks) {
 
   n = q2_.Pop();
   ASSERT_NE(n, nullptr);
-  EXPECT_EQ(*n, 2);
+  EXPECT_EQ(*n, 3);
   EXPECT_EQ(q2_.size(), 1);
 }
