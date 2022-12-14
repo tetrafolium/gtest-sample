@@ -14,6 +14,6 @@ TEST(summation_test, answer_05_multiply_100){
     EXPECT_EQ(1.0, summation(0, 0.5, 100));
 }
 
-TEST(summation_test, answer_08_multiply_100){
-    EXPECT_EQ(4, summation(0, 0.8, 100));
+TEST(summation_test, answer_08_multiply_1000){
+    EXPECT_NE(4.0, summation(0, 0.8, 1000));
 }
