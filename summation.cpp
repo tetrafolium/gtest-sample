@@ -14,10 +14,11 @@ double summation(double plus, double multiply, int num) {
 
 double summation2(double a, double multiply, int num) {
     long double result = 0.0;
+    long double multiply_i=-1.0;
     for (int i=0; i<num; i++){
         long double x;
-        multiply *= multiply;
-        x = 1.0/(1.0+a*i) * multiply;
+        multiply_i *= multiply;
+        x = 1.0/(1.0+a*i) * multiply_i;
         printf("x=%Lf ", x);
         result += x ;
     }
