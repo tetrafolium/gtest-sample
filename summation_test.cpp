@@ -23,5 +23,5 @@ TEST(summation_test, basic) {
 }
 
 TEST(summation2_test, basic) {
-    EXPECT_EQ(3.14, 4 * summation2(2.0, -1, 1000));
+    EXPECT_EQ(3.14, summation2(2.0, -1, 1000));
 }
