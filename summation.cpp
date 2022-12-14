@@ -9,7 +9,8 @@ double summation(double plus, double multiply, int num) {
         if (i==0) {
             result += base;
         } else {
-            result += pow(multiply, i) + plus;
+            // result += pow(multiply, i) + plus;
+            result += result * multiply + plus;
         }
     }
     return result;
