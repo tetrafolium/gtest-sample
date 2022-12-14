@@ -14,7 +14,7 @@ E* Stack<E>::Pop(){
   E* element = NULL;
   if (stackList.size()>0) {
     element = &stackList.front();
-    stackList.pop_front();
+    // stackList.pop_front();
   }
   return element;
 }
