@@ -14,7 +14,7 @@ E* Queue<E>::Dequeue(){
   E* element = NULL;
   if (queList.size()>0) {
     element = &queList.back();
-    queList.pop_back();
+    // queList.pop_back();
   }
   return element;
 }
