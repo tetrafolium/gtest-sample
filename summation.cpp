@@ -19,7 +19,6 @@ double summation2(double a, double multiply, int num) {
         long double x;
         multiply_i *= multiply;
         x = 1.0/(1.0+a*i) * multiply_i;
-        printf("x=%Lf ", x);
         result += x ;
     }
     return result;
