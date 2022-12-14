@@ -1,25 +1,25 @@
-#include "que_fifo.h"
+#include "stack.h"
 
 template <typename E>
-Queue<E>::Queue(){
+Stack<E>::Stack(){
 }
 
 template <typename E>
-void Queue<E>::Enqueue(const E& element){
+void Stack<E>::Push(const E& element){
   queList.push_front(element);
 }
 
 template <typename E>
-E* Queue<E>::Dequeue(){
+E* Stack<E>::Pop(){
   E* element = NULL;
   if (queList.size()>0) {
-    element = &queList.back();
-    queList.pop_back();
+    element = &queList.front();
+    queList.pop_front();
   }
   return element;
 }
 
 template <typename E>
-size_t Queue<E>::size() const{
+size_t Stack<E>::size() const{
   return queList.size();
 }
