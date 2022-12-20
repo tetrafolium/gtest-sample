@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "euclidean-algo.cpp"
+#include "euclidean-algo.h"
 
 TEST(euclidean_algo, test1){
     EXPECT_EQ(1, greatest_common_divisor(37, 41));
